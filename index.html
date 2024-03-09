@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositive Layout</title>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <!-- Mobile e Tablet sfondo blu logo a sinistra e humburger a destra -->
+    <header class="header flex center">
+        <!-- CONTAINER 100 - Desktop 80 -->
+        <div class="container flex justify-content-between">
+            <div class="header-logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+
+            <!-- Desktop logo a sinistra e <a> list con <a> stilizzato come un bottone -->
+            <nav class="header-menu center pt-sans-regular">
+                <ul class="white">
+                    <li><a class="white" href="#">Planning</a></li>
+                    <li><a class="white" href="#">Testimonials</a></li>
+                    <li><a class="white" href="#">Features</a></li>
+                    <li><a class="white" href="#">About us</a></li>
+                    <!-- Backgorund bianco -->
+                    <li><a class="btn-header" href="#">Get started</a></li>
+                </ul>
+            </nav>
+
+            <!-- Humburger menù non c'è più in desktop-->
+            <div class="hamburger-menu">
+                <button class="hamburger-menu-btn">
+                    <i class="fa-solid fa-bars white"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- /HEADER -->
+
+
+
+    <main>
+        <!-- HERO con 5 card ed una che occupa due spazi -->
+        <section class="hero-section pt-sans-regular">
+            <div class=" flex">
+                <div class="mrg-top-70 container hero-container hero-wrapper ">
+                    <div class="big-card ">
+                        <div class="texthero ">
+                            <h4 class="color-blue-text bold pdg-bottom-20">Get a demo application</h4>
+                            <p class="pdg-bottom-20 pt-sans-regular">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Possimus
+                                corporis voluptatibus,
+                                ad reprehenderit iste rerum. Minima, inventore quidem numquam possimus tenetur
+                                laboriosam, dolorum perspiciatis, blanditiis ducimus ratione neque dolores nobis.</p>
+
+                            <a class="white btn-apple" href="#"><i
+                                    class="fa-brands fa-apple pdg-right-10  white"></i>App store</a>
+
+
+                        </div>
+                        <div class="hero-phone-img text-align-center">
+                            <img class="phone-img pdg-top-20" src="./img/phone.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- 2 CARD -->
+                    <div class="card-right text-align-center ">
+                        <div class="hero-icone">
+                            <i class="fa-solid fa-file-code color-blue-text"></i>
+                            <h4 class="color-blue-text bold">Clean Code</h4>
+                        </div>
+                        <div class="text-hero pt-sans-regular">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem nostrum impedit</p>
+                        </div>
+                    </div>
+
+                    <!-- 3 CARD -->
+                    <div class="card text-align-center ">
+                        <div class="hero-icone">
+                            <i class="fa-solid fa-compass-drafting color-blue-text"></i>
+                            <h4 class="color-blue-text pt-sans-bold">Web Design</h4>
+                        </div>
+                        <div class="text-hero">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem nostrum impedit</p>
+                        </div>
+                    </div>
+
+                    <!-- 4 CARD -->
+                    <div class="card text-align-center ">
+                        <div class="hero-icone">
+                            <i class="fa-solid fa-laptop-code color-blue-text"></i>
+                            <h4 class="color-blue-text bold pt-sans-bold">Developement</h4>
+                        </div>
+                        <div class="text-hero">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem nostrum impedit</p>
+                        </div>
+                    </div>
+
+
+                    <!-- 5 CARD -->
+                    <div class="card text-align-center ">
+                        <div class="hero-icone">
+                            <i class="fa-solid fa-bullhorn color-blue-text"></i>
+                            <h4 class="color-blue-text bold pt-sans-bold">Branding</h4>
+                        </div>
+                        <div class="text-hero">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem nostrum impedit</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- /HERO  -->
+
+        <!---------- SEZIONE STRATEGIC PLANNING ----------->
+        <section class="strategic pt-sans-regular">
+            <div class="containerstrategic">
+                <div class="strategic-left white">
+                    <div>
+                        <img src="./img/planning1.png" alt="">
+                    </div>
+                    <div class="strat-left-text">
+                        <h1>Strategic Planning</h1>
+                        <p class="pdg-top-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste culpa
+                            cupiditate hic, dolores
+                            deserunt iure qui cum mollitia, saepe nam, vel voluptates quod? Eligendi debitis laudantium
+                            sequi corrupti quis pariatur.</p>
+                    </div>
+                </div>
+
+                <div class="app-dev-right text-align-center pdg-20">
+                    <div class="strat-right">
+                        <img src="./img/planning2.png" alt="">
+                    </div>
+                    <div class="strat-right-text">
+                        <h1>App Developement</h1>
+                        <p class="pdg-top-20 pdg-bottom-20">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Iste culpa cupiditate hic.</p>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- /SEZIONE STRATEGIC PLANNING ----------->
+
+        <!---------- SEZIONE TESTIMONIAL ----------->
+        <section class="testimonial pt-sans-regular">
+            <div class="container text-align-center">
+                <div class="title-center ">
+                    <span>TESTIMONIALS</span>
+                    <h2 class="color-violet-text pdg-top-20 title-testimonials">We are committed expert partners</h2>
+                    <p class="pdg-top-20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est odio dolor
+                        laudantium sed facilis,
+                        illo itaque vero tenetur veniam eveniet deserunt accusantium, beatae numquam, consectetur
+                        voluptate architecto a similique earum!</p>
+                </div>
+                <!-- CARD TESTIMONIAL 1 -->
+
+                <div class="cardtest">
+                    <div class="imgcircle">
+                        <img class="img-circle-test" src="./img/testimonial1.jpg" alt="">
+                    </div>
+                    <div class="testimonial-text-right white">
+                        <p class="pdg-top-20"> <span class=""><i class="fa-solid fa-quote-left"></i></span> Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit. Vitae voluptatem, nam vero
+                            iste
+                            reiciendis dolores! Qui, ipsam repudiandae officia provident eligendi, aliquam nemo
+                            possimus, recusandae rerum beatae excepturi hic eius? <span class=""><i
+                                    class="fa-solid fa-quote-right"></i></span></p>
+                        <h6 class="pdg-top-20 testimonial-name">FERNANDO DIAZ</h6>
+                    </div>
+                </div>
+                <!-- CARD TESTIMONIAL 2 -->
+                <div class="cardtest mrg-top-20">
+                    <div class="imgcircle">
+                        <img class="img-circle-test" src="./img/testimonial2.jpg" alt="">
+                    </div>
+                    <div class="testimonial-text-right white">
+                        <p class="pdg-top-20">
+                            <i class="fa-solid fa-quote-left"></i>
+                            Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit. Vitae voluptatem, nam vero
+                            iste
+                            reiciendis dolores! Qui, ipsam repudiandae officia provident eligendi, aliquam nemo
+                            possimus, recusandae rerum beatae excepturi hic eius?
+                            <i class="fa-solid fa-quote-right"></i>
+                        </p>
+                        <h6 class="pdg-top-20 testimonial-name">CELIA ALMEDA</h6>
+                    </div>
+                </div>
+
+                <!-- CARD TESTIMONIAL 3 -->
+                <div class="cardtest mrg-top-20">
+                    <div class="imgcircle">
+                        <img class="img-circle-test" src="./img/testimonial3.jpg" alt="">
+                    </div>
+                    <div class="testimonial-text-right white">
+                        <p class="pdg-top-20"> <span class=""><i class="fa-solid fa-quote-left"></i></span> Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit. Vitae voluptatem, nam vero
+                            iste
+                            reiciendis dolores! Qui, ipsam repudiandae officia provident eligendi, aliquam nemo
+                            possimus, recusandae rerum beatae excepturi hic eius? <span class=""><i
+                                    class="fa-solid fa-quote-right"></i></span></p>
+                        <h6 class="pdg-top-20 testimonial-name">BOB MARLEY</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------- /SEZIONE TESTIMONIAL ----------->
+
+        <!----------- SEZIONE BENEFIT OF WORKING ------------------>
+        <section class="benefit-work">
+            <h2 class="white pdg-20 text-align-center title-benefif">Benefit of working with us</h2>
+            <div class="container wrapper-benefit ">
+                <!------------- 1 BENEFIT CARD ------------->
+                <div class="beneft-card pdg-20">
+                    <h1 class="nmb-benefit color-violet-text pt-sans-bold"> 01</h1>
+                    <h4 class="pdg-top-20 pdg-bottom-20 title-card-benefit color-violet-text"> High Quality</h4>
+                    <p class="pdg-bottom-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat natus nisi
+                        error non voluptates,
+                        in sed quae repellat dolorum, ipsum odio doloremque alias ad voluptas! At aliquam quisquam
+                        ducimus hic!</p>
+
+                    <a class="btn-more" href="">more</a>
+                </div>
+
+                <!------------- 2 BENEFIT CARD ------------->
+                <div class="beneft-card pdg-20">
+                    <h1 class="nmb-benefit color-violet-text pt-sans-bold"> 02</h1>
+                    <h4 class="pdg-top-20 pdg-bottom-20 title-card-benefit color-violet-text"> Creative Team</h4>
+                    <p class="pdg-bottom-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat natus nisi
+                        error non voluptates,
+                        in sed quae repellat dolorum, ipsum odio doloremque alias ad voluptas! At aliquam quisquam
+                        ducimus hic!</p>
+
+                    <a class="btn-more" href="">more</a>
+                </div>
+
+                <!------------- 3 BENEFIT CARD ------------->
+                <div class="beneft-card pdg-20">
+                    <h1 class="nmb-benefit color-violet-text pt-sans-bold"> 03</h1>
+                    <h4 class="pdg-top-20 pdg-bottom-20 title-card-benefit color-violet-text"> Amazing Result</h4>
+                    <p class="pdg-bottom-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat natus nisi
+                        error non voluptates,
+                        in sed quae repellat dolorum, ipsum odio doloremque alias ad voluptas! At aliquam quisquam
+                        ducimus hic!</p>
+
+                    <a class="btn-more" href="">more</a>
+                </div>
+
+                <!------------- 4 BENEFIT CARD ------------->
+                <div class="beneft-card pdg-20">
+                    <h1 class="nmb-benefit color-violet-text pt-sans-bold"> 04</h1>
+                    <h4 class="pdg-top-20 pdg-bottom-20 title-card-benefit color-violet-text">Best Pricing</h4>
+                    <p class="pdg-bottom-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat natus nisi
+                        error non voluptates,
+                        in sed quae repellat dolorum, ipsum odio doloremque alias ad voluptas! At aliquam quisquam
+                        ducimus hic!</p>
+
+                    <a class="btn-more" href="">more</a>
+                </div>
+
+                <!------------- 5 BENEFIT CARD ------------->
+                <div class="beneft-card pdg-20">
+                    <h1 class="nmb-benefit color-violet-text pt-sans-bold"> 05</h1>
+                    <h4 class="pdg-top-20 pdg-bottom-20 title-card-benefit color-violet-text">Innovation</h4>
+                    <p class="pdg-bottom-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat natus nisi
+                        error non voluptates,
+                        in sed quae repellat dolorum, ipsum odio doloremque alias ad voluptas! At aliquam quisquam
+                        ducimus hic!</p>
+
+                    <a class="btn-more" href="">more</a>
+                </div>
+
+                <!------------- 6 BENEFIT CARD ------------->
+                <div class="beneft-card pdg-20">
+                    <h1 class="nmb-benefit color-violet-text pt-sans-bold"> 06</h1>
+                    <h4 class="pdg-top-20 pdg-bottom-20 title-card-benefit color-violet-text">24/7 Support</h4>
+                    <p class="pdg-bottom-20">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat natus nisi
+                        error non voluptates,
+                        in sed quae repellat dolorum, ipsum odio doloremque alias ad voluptas! At aliquam quisquam
+                        ducimus hic!</p>
+
+                    <a class="btn-more" href="">more</a>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------- SEZIONE ABOUT US  ---------------------->
+        <section class="about-us pdg-bottom-20 mrg-top-70">
+            <div class="container about-us">
+                <div class="about-left">
+                    <h1 class="pt-sans-bold color-violet-text title-about-us">About us</h1>
+                    <p class="pdg-top-20 line-height-30">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                        nobis assumenda possimus animi
+                        commodi minus voluptatum, fugiat sunt reiciendis porro praesentium et odio adipisci beatae sint
+                        in corporis itaque unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                        iusto esse maiores explicabo fuga, obcaecati dicta autem sequi minus! Harum, eum? Consequuntur
+                        molestiae laudantium, culpa mollitia nobis quibusdam est perferendis.</p>
+                    <p class="pdg-top-20 line-height-30">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                        nobis assumenda possimus animi
+                        commodi minus voluptatum, fugiat sunt reiciendis porro praesentium et odio adipisci beatae sint
+                        in corporis itaque unde.</p>
+                </div>
+                <div class="about-right">
+                    <div class="imgcircle-about-us pdg-top-20">
+                        <img class="img-circle-about-us" src="./img/about.jpg" alt="">
+                        <i class="fa-solid fa-quote-left quote-left-about-us color-violet-text"></i>
+                    </div>
+                    <h5 class="pt-sans-bold-italic color-violet-text pdg-top-20 h-about-us pdg-bottom-20">I help
+                        companies unde hic molestiae reprehenderit maiores ipsam tenetur. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Eum ullam assumenda! </h5>
+                    <a class="btn-linkedin" href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                        Find me on linkedin</a>
+                </div>
+            </div>
+        </section>
+
+        <!---------------------- SEZIONE CALL TO ACTION ---------------------->
+        <section class="cta-section pdg-20 mrg-top-70">
+            <div class="small-container white text-align-center pdg-bottom-20">
+                <span>GET STARTED</span>
+                <h2>Simple, Trasparent Pricing</h2>
+                <h1>It's Free!</h1>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat iure assumenda, nam modi aliquam
+                    mollitia eveniet nobis provident quo, exercitationem hic laudantium aspernatur quia deleniti quod
+                    sit sunt veritatis distinctio?</span>
+                <div class="">
+                    <a class="btn-cta" href="#"> Get started</a>
+                </div>
+
+
+                <span>Copyright 2021 Boolean
+                    .
+                    Classe 124
+                    .
+                    <a class="" href="#">Privacy policy</a>
+                </span>
+            </div>
+        </section>
+
+        <!----------- FOOTER -------->
+
+        <footer class="footer pdg-20">
+            <div class="small-container text-align-center white">
+                <div class="pdg-top-20">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, culpa sequi officiis rem
+                        quae veniam. Suscipit enim, est necessitatibus, commodi fugiat, tempore modi impedit dignissimos
+                        accusamus voluptate soluta reprehenderit. Suscipit!</span>
+                </div>
+                <div class="pdg-top-20">
+                    <span>
+                        <a href="#">Lorem ipsum</a>
+                        dolor sit amet consectetur adipisicing elit.
+                        <a href="#">Boolean Carrer</a>
+                    </span>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>

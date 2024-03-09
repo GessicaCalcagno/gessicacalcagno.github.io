@@ -1,0 +1,356 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+    /* font-size: clamp(1.8rem, calc(3vh + 0.8), 3rem); */
+}
+
+/* COMMON */
+.container {
+    width: 100%;
+    padding: 0px 1rem;
+}
+
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-sans-bold-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/************************************************
+    UTILITIES
+ ************************************************/
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.white {
+    color: white;
+}
+
+.mrg-top-70 {
+    margin-top: 70px;
+}
+
+.mrg-top-20 {
+    margin-top: 20px;
+}
+
+.pdg-20 {
+    padding: 20px;
+}
+
+.color-blue-text {
+    color: #0084FD;
+}
+
+.color-violet-text {
+    color: #9792E4;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.pdg-bottom-20 {
+    padding-bottom: 20px;
+}
+
+.pdg-right-10 {
+    padding-right: 10px;
+}
+
+.pdg-top-20 {
+    padding-top: 20px;
+}
+.line-height-30{
+    line-height:30px;
+}
+
+/**********************************************************************/
+/* ------------HEADER ----------*/
+.header {
+    background-color: #0084FD;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 9999;
+}
+
+.logo-hed img {
+    vertical-align: middle;
+}
+
+.header-menu {
+    display: none;
+}
+
+.header-menu ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.hamburger-menu-btn {
+    font-size: 1.6rem;
+    border: 0;
+    background-color: transparent;
+}
+
+.btn-header {
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+
+
+/****************************************************************/
+/* -------------- HERO ---------------------*/
+.hero-section {
+    padding-bottom: 20px;
+}
+
+.card,
+.big-card,
+.card-right {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #B5DDFF;
+}
+
+.big-card {
+    padding: 20px 20px 0 20px;
+}
+
+.phone-img {
+    display: block;
+}
+
+.hero-phone-img {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.btn-apple {
+    background-color: #0084FD;
+    padding: 8px 20px 8px 20px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.fa-brands .fa-apple {
+    padding: 20px 10px 2px 0;
+    font-weight: 100;
+}
+
+.card-right,
+.card {
+    padding: 20px;
+}
+
+.hero-icone>.fa-solid {
+    font-size: 5rem;
+    padding-bottom: 10px;
+}
+
+.text-hero {
+    padding: 1rem;
+}
+
+/**********************************************************************/
+/* <!---------- SEZIONE STRATEGIC PLANNING -----------> */
+.strategic {
+    width: 100%;
+    background-color: #9792E4;
+    padding: 20px 10px;
+}
+
+.strat-left {
+    padding: 10px;
+}
+
+.app-dev-right {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px 10px 0 10px;
+}
+
+.strat-right {
+    padding: 10px;
+}
+
+.fa-arrow-down {
+    background-color: #9792E4;
+    padding: 16px 20px;
+    border-radius: 50%;
+}
+
+/**********************************************************************/
+/* <!---------- SEZIONE TESTIMONIAL -----------> */
+.testimonial {
+    padding: 40px 0;
+}
+
+.title-testimonials {
+    font-size: 2rem;
+}
+
+.title-center {
+    padding-bottom: 20px;
+}
+
+.cardtest {
+    background-color: #9792E4;
+    border-radius: 20px;
+    padding: 20px 5px;
+}
+
+.img-circle-test {
+    width: 50%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    /* object-position: center; */
+}
+
+.testimonial-name {
+    font-size: 1rem;
+}
+
+/**********************************************************************/
+/* <!-- SEZIONE BENEFIT OF WORKING  --> */
+.benefit-work {
+    width: 100%;
+    background-color: #9792E4;
+    padding: 0 0 20px 0;
+}
+
+.title-benefif {
+    font-size: 2rem;
+    padding: 30px;
+}
+
+.beneft-card {
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.nmb-benefit {
+    font-size: 3rem;
+}
+
+.title-card-benefit {
+    font-size: 1.2rem;
+}
+
+.btn-more {
+    background-color: #9792E4;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+}
+
+/**********************************************************************/
+/* <!---------------------- SEZIONE ABOUT US ---------------------> */
+.title-about-us{
+    font-size: 3rem;
+}
+
+.img-circle-about-us{
+    width: 50%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    /* object-position: center; */
+}
+
+.h-about-us{
+    font-size: 1rem;
+}
+
+.imgcircle-about-us{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+}
+
+.img-circle-about-us{
+    width: 100%;
+
+}
+.quote-left-about-us {
+    font-size: 3rem;
+    position: absolute;
+    top: 20px;
+    left: 70%;
+}
+.btn-linkedin{
+    background-color: #9792E4;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+/**********************************************************************/
+/* <!-----------------SEZIONE CALL TO ACTION ----------------------> */
+.cta-section{
+background-color: #9792E4;
+}
+
+/*********************************************************************/
+/* <!----------------- FOOTER ----------------------> */
+.footer{
+    background-color: black;
+}
